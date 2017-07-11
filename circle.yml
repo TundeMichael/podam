@@ -8,5 +8,8 @@ dependencies:
   override:
     - mvn clean install
     
+test:
+  override:
+    - mvn clean package
     
 
