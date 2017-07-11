@@ -2,9 +2,5 @@ machine:
   ruby:
     version: rbx-2.2.6
   java:
-    version: openjdk7
-
-dependencies:
-  override:
-    - mvn clean install -X
+    version: openjdk6
 
