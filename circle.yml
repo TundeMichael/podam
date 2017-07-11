@@ -2,5 +2,11 @@ machine:
   ruby:
     version: rbx-2.2.6
   java:
-    version: oraclejdk6
+    version: openjdk7
+
+dependencies:
+  pre:
+    - rm -rf rm -rf ~/.m2/repository
+  override:
+    - mvn clean install
 
