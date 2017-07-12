@@ -4,7 +4,7 @@ machine:
 
 dependencies:
   override:
-    - mvn -T 4 install 
+    - mvn -T 4 install -DskipTests=true
     
 test:
   post:
