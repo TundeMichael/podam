@@ -4,10 +4,10 @@ machine:
 
 dependencies:
   override:
-    - mvn clean install
+    - mvn -T 4 install -DskipTests=true
     
 test:
   override:
-    - mvn clean package
+    - mvn package
     
 

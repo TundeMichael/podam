@@ -346,6 +346,7 @@
 							<goal>integration-test</goal>
 							<goal>verify</goal>
 						</goals>
+                                                <phase>test</phase>
 					</execution>
 				</executions>
 			</plugin>
