@@ -3,10 +3,8 @@ machine:
     version: openjdk7
 
 dependencies:
-  pre:
-    - rm -rf rm -rf ~/.m2/repository
   override:
-    - mvn -T 4 install -DskipTests=true
+    - mvn install -DskipTests=true
     
 test:
   post:
@@ -14,7 +12,7 @@ test:
     - find . -type f -regex ".*/target/site/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
 
   override:
-    - mvn package -DskipTests=true
+    - mvn package 
     
 
 
