@@ -14,7 +14,7 @@ test:
     - find . -type f -regex ".*/target/site/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
 
   override:
-    - mvn package
+    - mvn package -DskipTests=true
     
 
 
