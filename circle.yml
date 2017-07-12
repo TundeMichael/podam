@@ -1,3 +1,7 @@
+machine:
+  java:
+    version: openjdk7
+
 dependencies:
   override:
     - mvn -T 4 install -DskipTests=true
